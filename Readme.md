@@ -1,4 +1,5 @@
 USER_FRONT APPLICATION:
+
 End to end Layers: Controller -> Service -> DAO -> Database
 
 Steps:
@@ -9,7 +10,7 @@ Eg:  account controller for primary account, savings account, deposit, withdraw.
 - Create config folder -> security config and CORS (RequestFilter)
 - Create service folder -> contains interfaces of services and their ServiceImpl
 - Create DAO folder -> one dao for each entity in database 
-- 
+ 
 
 Note:
 - Login is handled in security config using spring secuirty.
@@ -18,7 +19,9 @@ object exists when the page is loaded => create get method for that controller
 and then post method.
 
 ADMIN_PORTAL APPLICATION:
+
 End to end Layers: Router -> Component -> Service -> Backend Application(USER_FRONT) 
+
 Steps:
 - Create components using Angular CLI 
 - Add routes in app.routing.ts
